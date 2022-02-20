@@ -18,7 +18,7 @@
       </div>
       <div class="col-sm-5" style="margin: 0 auto">
         <input
-            v-model="comment.content"
+            v-model="comment.body"
             type="text"
             required
             class="form-control" placeholder="Content">
@@ -37,7 +37,7 @@ export default {
      comment: {
        name: '',
        email: '',
-       content: ''
+       body: ''
      }
     }
   },
@@ -48,7 +48,7 @@ export default {
       this.comment = {
         name: '',
         email: '',
-        content: ''
+        body: ''
       }
     }
   }

@@ -7,8 +7,8 @@
           v-for="comment in comments" :key="comment.id">
         <div>
           <b>Name:</b> <span>{{comment.name}}</span> <br>
-          <b>Email:</b> <span>{{comment.email}}</span> <br>
-          <b>Content:</b> <span>{{comment.content}}</span>
+          <b>Email:</b> <a>{{comment.email}}</a> <br>
+          <b>Content:</b> <span>{{comment.body}}</span>
         </div>
         <button class="btn btn-danger" @click="$emit('remove', comment)">Delete</button>
       </li>
