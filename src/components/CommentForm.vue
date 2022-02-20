@@ -5,18 +5,22 @@
         <input
             v-model="comment.name"
             type="text"
-            class="form-control" placeholder="Name">
+            required
+            class="form-control"
+            placeholder="Name">
       </div>
       <div class="col-sm-5" style="margin: 0 auto">
         <input
             v-model="comment.email"
             type="email"
+            required
             class="form-control" style="margin: 10px 0;" placeholder="E-mail">
       </div>
       <div class="col-sm-5" style="margin: 0 auto">
         <input
             v-model="comment.content"
             type="text"
+            required
             class="form-control" placeholder="Content">
       </div>
       <button @click="createComment" class="btn btn-success" style="margin-top: 12px">Add</button>
